@@ -147,3 +147,12 @@ footer p
 
 }
 
+
+/* body a{
+    display:none;
+    } */
+
+    /* removes the 000webhost.com link, although probs not going to use them anymore. If they change the title I would have to change mine, I guess you could find anything that is in body that is not got a specific title and then delete everything that has a different one, honestly... too much work for a slow web host */
+[title^='Hosted on free web hosting 000webhost.com. Host your own website for FREE.'] {
+    display:none;
+      }
