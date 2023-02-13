@@ -1,0 +1,149 @@
+/* html
+{
+
+    height: 100%;
+} */
+
+body{
+
+    background-color: rgb(81, 81, 81);
+    background-image: url(images/background-adare-restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container
+{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px; 
+    margin-top: 2%;
+    
+}
+
+/* comments work in css: highlight text, ctrl+/*/
+h1
+{
+    font-size: 84px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p
+{
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header
+{
+
+    /* background-color: blue; */
+    height: 120px;
+    text-align: center;
+
+}
+
+nav
+{
+
+    background-color: rgba(33, 33, 33, 0.45);
+    height: 30px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 1%;
+
+}
+
+nav a 
+{
+
+    font-size: 11px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+a
+{
+    font-size: 14px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+main
+{
+
+    /* background-color: rgb(255, 162, 0); */
+    height: 340px;
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 0px;
+    padding-left: 250px;
+    padding-right: 250px;
+
+
+}
+
+.maps
+{
+    height: 450px;
+
+    text-align: center;
+
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.space30px
+{
+    height: 30px;
+
+}
+
+.video
+{
+    height: 315px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    size-adjust: cover;
+
+}
+
+footer
+{
+
+    background-color: rgba(57, 57, 57, 0.45);
+    height: 90px;
+    width: 700px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    padding-top: 50px;
+
+
+
+}
+footer p
+{
+
+    font-size: 10px;
+    color: white;
+
+}
+
