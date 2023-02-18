@@ -1,158 +1,325 @@
-/* html
-{
-
-    height: 100%;
-} */
-
-body{
-
-    background-color: rgb(81, 81, 81);
-    background-image: url(images/background-adare-restaurant.jpg);
+html{
+    /* this is how to do a gradient */
+/* background-image: linear-gradient(#FC5E55,#FA4083); */
+background-image: linear-gradient(#FC5E55, #FA4083);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.container
-{
+body {
+    background-image: url(images/image-lion-background.png);
+    background-repeat: no-repeat;
+
+    /* this is different from size cover */
+    background-position: top center;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.container {
+
+    width: 80vw;
+    min-height: 300px;
+    /* background-color: rgb(255, 0, 0); */
 
     margin-left: auto;
     margin-right: auto;
-    width: 1024px; 
-    margin-top: 2%;
+
+
+}
+
+header {
+
+    /* background-color: rgb(51, 168, 38); */
+    min-height: 100px;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* add this if you want the lion logo to the right a bit more 
+    padding-left: 2%; */
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    border-bottom: 2px solid lightgrey;
     
 }
 
-/* comments work in css: highlight text, ctrl+/*/
-h1
-{
-    font-size: 84px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+
+nav {
+
+    /* Sets position in header */
+    flex: 2;
+
+    /* Sets flexbox and then spreads them out evenly */
+    display: flex;
+    justify-content: flex-end;
+
+
 }
 
-p
-{
-    font-size: 15px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+.navbutton {
+
+    /* background-color: white; */
+    white-space: nowrap;
+    /* color: #FC5E55; */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    padding: 3% 5% 3% 5%;
+    margin-left: 8%;
+
+    box-shadow: 0.0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25);
+    border: 2px solid white;
+    border-radius: 1rem 0rem;
+
+    display: inline-block;
+
 }
 
-header
-{
+/* https://www.w3schools.com/css/css_pseudo_classes.asp */
+.navbutton:hover {
 
-    /* background-color: blue; */
-    height: 120px;
+    background-color:crimson;
+    transition-duration: 1s;
+
+}
+
+.dropdownbox{
+
+    display: none;
+
+}
+
+nav .navbutton:hover .dropdownbox{
+
+    display: block;
+    
+    position: absolute;
+    margin-top: 1.2%;
+    margin-left: 0%;
+}
+
+nav .dropdownbox .navbutton{
+
+    display: block;
+    margin-left: -11%;  
+    margin-top: 3%;
+    margin-bottom: 4%;
+
+    text-align: center;
+    
+    font-size: 1rem;
+    padding: 7% 0%;
+    width: 8rem;
+    
+}
+
+nav .dropdownbox .navbutton:hover{
+    background-color: #fa4040;
+    
+}
+
+
+nav .navbutton:active {
+
+    background-color: rgb(160, 0, 32);
+    transition-duration: 0s;
+
+}
+
+
+main {
+
+    padding-top: 3%;
+
+    /* background-color: rgb(61, 220, 43); */
+    min-height: 200px;
+
+    display: flex;
+   
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+}
+
+.contactpagemain{
+    
+    padding-top: 3%;
+    padding-right: 20%;
+    min-height: 200px;
+   
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.mainbox1 {
+
+    padding-right: 10%;
+    flex: 2;
+
+
+}
+
+.mainbox2 {
+
+    flex: 1;
+
+}
+
+
+.cards {
+
+    /* background-color: rgb(65, 246, 45); */
+    min-height: 18.375rem;
+    /* max-height: 18.375rem; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+
+
+}
+
+.card1 {
+
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    /* background-color: rgb(255, 91, 162); */
+    width: 30%;
+
+    text-align: center;
+
+
+}
+
+.card2 {
+
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+
+    /* background-color: rgb(255, 91, 203); */
+    width: 30%;
     text-align: center;
 
 }
 
-nav
-{
+.card3 {
 
-    background-color: rgba(33, 33, 33, 0.45);
-    height: 30px;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    width: 30%;
+    /* background-color: rgb(250, 91, 255); */
+
     text-align: center;
-    padding-top: 1%;
 
 }
 
-nav a 
-{
+.card1,
+.card2,
+.card3 {
+    padding: 2% 3% 0% 2%;
+    box-sizing: border-box;
 
-    font-size: 11px;
+    box-shadow: 0.0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.logo {
+
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    flex: 3;
+
+}
+
+.spacew {
+
+    width: 3rem;
+}
+
+h1 {
+
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+
+    text-shadow: 0.0rem 0.1rem 0.18rem rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.75rem;
+}
+
+p {
+
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.cards p {
+
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+
+
+i {
+
+    font-size: 116px;
+    line-height: 1.5rem;
+    margin-bottom: 0.4rem;
+
+    /* flips the icon */
+    transform: scaleX(-1)
+}
+
+a {
+
     text-decoration: none;
-    padding-left: 15px;
-    padding-right: 15px;
-
-}
-
-a
-{
-    font-size: 14px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
 }
 
-main
-{
+section {
 
-    /* background-color: rgb(255, 162, 0); */
-    height: 340px;
-    text-align: center;
-    margin-top: 0%;
-    padding-top: 0px;
-    padding-left: 250px;
-    padding-right: 250px;
-
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-bottom: 7rem;
 }
 
-.maps
-{
-    height: 450px;
+.tbox {
 
-    text-align: center;
+    padding: 5vh;
 
-    margin-top: 0%;
-    margin-left: auto;
-    margin-right: auto;
-
+    width: 49%;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 4vh;
+    box-shadow: 0.0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25);
 }
 
-.space30px
-{
-    height: 30px;
+.tbox :nth-child(2) {
 
+    text-align: end;
+
+    font-size: 0.9rem;
 }
-
-.video
-{
-    height: 315px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-    size-adjust: cover;
-
-}
-
-footer
-{
-
-    background-color: rgba(57, 57, 57, 0.45);
-    height: 90px;
-    width: 700px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    text-align: center;
-    padding-top: 50px;
-
-
-
-}
-footer p
-{
-
-    font-size: 10px;
-    color: white;
-
-}
-
-
-/* body a{
-    display:none;
-    } */
-
-    /* removes the 000webhost.com link, although probs not going to use them anymore. If they change the title I would have to change mine, I guess you could find anything that is in body that is not got a specific title and then delete everything that has a different one, honestly... too much work for a slow web host */
-[title^='Hosted on free web hosting 000webhost.com. Host your own website for FREE.'] {
-    display:none;
-      }
