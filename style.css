@@ -51,7 +51,7 @@ header {
 main {
 
     padding-top: 128px;
-    padding-bottom: 128px;
+    /* padding-bottom: 128px; */
 
 }
 
@@ -61,6 +61,25 @@ main {
     background-color: #2A2D33;
 
     width: 100%;
+
+}
+
+.cubeDropperBannerColour {
+
+    background-color: #2A2D33;
+
+}
+
+/* change background colour of banner with thones like this */
+.giraffeRingRumbleBannerColour {
+
+    background-color: #832000;
+
+}
+
+.polyplanetBannerColour {
+
+    background-color: #033d5c;
 
 }
 
@@ -92,7 +111,7 @@ footer {
 
     color: #F6F5F4;
     background-color: #3C3C3C;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 
 }
 
@@ -251,9 +270,9 @@ nav a {
 }
 
 /* sections */
-section {
+.sectionPageNav {
 
-    margin-top: 128px;
+    margin-top: 168px;
     margin-bottom: 128px;
 
 }
