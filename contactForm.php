@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
 
     // send to publicly found email
-    $mailTo = "landis.tanvir@moosbay.com";
+    $mailTo = "TheFerretStudio@Gmail.com";
     // $mailTo = "TheFerretStudio@gmail.com";
     $headers = "From: " . $emailFrom;
     $txt = "You have recieved an email from " . $name . " " . $phoneNumber . ".\n\n" . $message;
@@ -17,5 +17,4 @@ if (isset($_POST['submit'])) {
 
     mail($mailTo, $headers, $txt);
     header("Location: contact.html?mailsend");
-
 }
